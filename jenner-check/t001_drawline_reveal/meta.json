@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_drawline_reveal",
+  "source_file": "utl-create-an-animation-gif-plot-using-r-gganimate-package.sas",
+  "source_blob_sha": "be21359c53cb0825c8bf012b08f73a3a9416f608",
+  "source_commit": "deb284dcaa9bcdcd4df013f1ce6cc59b0d22dab8",
+  "notes": "Upstream animates a line through three tribble points (2020-01-01,2),(2020-02-01,4),(2020-03-01,3) via R gganimate transition_reveal, rendered to a GIF. The R payload cannot run on Jenner (SAS engine). This bundle reproduces the same three-point series as a native SAS dataset, maps the dates to a numeric axis the way the R code does with as.numeric(ymd(time)) (INPUT + yymmdd10.), and computes the drawn line's per-segment slopes plus a MEANS summary. Data and variables derive from the repo's actual tribble content."
+}
